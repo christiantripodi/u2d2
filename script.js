@@ -38,7 +38,13 @@ if (terzoNumero !== 5){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const quartoNumero = 25
 
+if(quartoNumero % 5 == 0){
+    console.log("Il numero è divisibile per 5")
+}else {
+    console.log("il numero non è divisibile per 5")
+}
 
 
 /* ESERCIZIO 4
@@ -46,6 +52,17 @@ if (terzoNumero !== 5){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+const quintoNumero = 7
+const sestoNumero = 7
+
+if(quintoNumero == 8|| sestoNumero == 8|| quintoNumero - sestoNumero == 8|| sestoNumero - quintoNumero == 8){
+    console.log("Il numero o risultato è 8")
+}else{
+    console.log("Il numero o risultato non è 8")
+}
+
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -55,12 +72,50 @@ if (terzoNumero !== 5){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
+
+// const totalShoppingCart = 60
+// const spedizione = 10
+
+// if(totalShoppingCart > 50){
+//     console.log(totalShoppingCart)
+// }else{
+    
+//     console.log(totalShoppingCart + spedizione)
+// }
+
+
+
+
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+
+const totalShoppingCart = 60
+const spedizione = 10
+const sconto = totalShoppingCart * 0.2
+const totaleDaPagare = totalShoppingCart - sconto
+
+if(totalShoppingCart > 50){
+ 
+    console.log("Il totale da pagare è ", totaleDaPagare)
+}else{
+    
+    console.log("Il totale da pagare è ", totaleDaPagare + spedizione)
+}
+
+
+
+
+
+
+
+
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
