@@ -152,23 +152,49 @@ if(a > b && a > c && b > c){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
+let num = '6';
+
+if(num == typeof(Number)){
+  console.log('è un numero');
+}else{
+  console.log('non è un numero');
+}
+
+
+
+
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
+let n = 7;
+
+if(n % 2 == 0){
+  console.log('pari');
+}else{
+  console.log('dispari');
+}
+
+
+
+
 /* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
+  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.*/
+
+
   let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
+  if (val < 5) {
       console.log("Meno di 5");
+    } else if (val < 10) {
+      console.log("Meno di 10");
     } else {
       console.log("Uguale a 10 o maggiore");
     }
-*/
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -182,12 +208,19 @@ const me = {
     skills: ['javascript', 'html', 'css'],
   }
   
+me.city = "Toronto" 
+console.log(me)
+
   /* SCRIVI QUI LA TUA RISPOSTA */
   
   /* ESERCIZIO 12
     Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
   */
   
+delete me.lastName;
+console.log(me)
+
+
   /* SCRIVI QUI LA TUA RISPOSTA */
   
   /* ESERCIZIO 13
@@ -195,16 +228,34 @@ const me = {
   */
   
   /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+me.skills.pop();
+console.log(me)
+
+
+
   
   /* ESERCIZIO 14
     Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
   */
   
   /* SCRIVI QUI LA TUA RISPOSTA */
+
+  const primoArray = []
+
+  primoArray.push (1,2,3,4,5,6,7,8,9,10);
+
+  console.log(primoArray)
+
+
   
   /* ESERCIZIO 15
     Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
   */
   
   /* SCRIVI QUI LA TUA RISPOSTA */
-  
+
+
+  primoArray.splice(9 , 1, 100);
+console.log(primoArray);
