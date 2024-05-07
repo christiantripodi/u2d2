@@ -114,9 +114,6 @@ if(totalShoppingCart > 50){
 
 
 
-
-
-
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -124,6 +121,30 @@ if(totalShoppingCart > 50){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+const a = 11;
+const b = 33;
+const c = 22;
+
+
+if(a > b && a > c && b > c){
+  console.log(a, b ,c);
+}else if(a > b && a > c && c > b){
+  console.log(a, c, b);
+}else if(b > a && b > c && a > c){
+  console.log(b, a, c);
+}else if(b > a && b > c && c >a){
+  console.log(b, c, a);
+}else if(c > a && c > b && a > b){
+  console.log(c, a, b);
+}else if(c > a && c > b && b > a){
+  console.log(c, b, a);
+}
+
+
+
+
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
